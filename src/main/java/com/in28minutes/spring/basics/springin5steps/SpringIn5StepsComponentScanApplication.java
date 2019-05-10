@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 import componentscan.ComponentDAO;
 
 @SpringBootApplication
-@ComponentScan("componentscan")
+@ComponentScan("componentscan") //this means I want to do component scan in this package
 public class SpringIn5StepsComponentScanApplication {
 
     private static Logger logger = LoggerFactory.getLogger(SpringIn5StepsComponentScanApplication.class);

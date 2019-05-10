@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
 @Component
-
+@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class PersonDAO {
 
     @Autowired

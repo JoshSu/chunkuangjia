@@ -24,6 +24,10 @@ public class SpringIn5StepsScopeApplication {
 
         ApplicationContext applicationContext = SpringApplication.run(SpringIn5StepsScopeApplication.class, args);
         BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
+        BinarySearchImpl binarySearch1 = applicationContext.getBean(BinarySearchImpl.class);
+
+//        System.out.println(binarySearch);
+//        System.out.println(binarySearch1);
         PersonDAO personDAO = applicationContext.getBean(PersonDAO.class);
 
         PersonDAO personDAO2 = applicationContext.getBean(PersonDAO.class);

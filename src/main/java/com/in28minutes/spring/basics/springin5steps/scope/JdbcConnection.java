@@ -6,10 +6,10 @@ import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE, proxyMode = ScopedProxyMode.TARGET_CLASS)public class JdbcConnection {
+@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE, proxyMode = ScopedProxyMode.TARGET_CLASS) //because it is insode PersonDao, so in order to have a different object ,you need a proxy
+public class JdbcConnection {
     public JdbcConnection() {
         System.out.println("JDBC connection");
     }
-
 
 }
